@@ -1,0 +1,14 @@
+[
+  {
+    "item": "fishCommon",
+    "weight": 50
+  },
+  {
+    "item": "fishRare",
+    "weight": 30
+  },
+  {
+    "item": "fishLegendary",
+    "weight": 20
+  }
+]

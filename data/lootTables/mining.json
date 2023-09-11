@@ -1,0 +1,14 @@
+[
+  {
+    "item": "rock",
+    "weight": 60
+  },
+  {
+    "item": "ore",
+    "weight": 30
+  },
+  {
+    "item": "treasure",
+    "weight": 10
+  }
+]
