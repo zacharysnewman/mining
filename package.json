@@ -1,0 +1,15 @@
+{
+  "name": "nodejs-mining",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "node src/server.js",
+    "client": "node src/client.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
