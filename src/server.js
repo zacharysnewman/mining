@@ -1,10 +1,11 @@
 const http = require("http");
 const url = require("url");
+const { timeToMine } = require("./globals");
 
 // Define the initial resource counts
-let rockCount = 10;
-let oreCount = 5;
-let treasureCount = 2;
+let rockCount = 0;
+let oreCount = 0;
+let treasureCount = 0;
 
 const server = http.createServer((req, res) => {
   const parsedUrl = url.parse(req.url, true);
@@ -45,7 +46,7 @@ const server = http.createServer((req, res) => {
         }
 
         mineIteration(index + 1);
-      }, 1000); // Simulate 1 second delay for each mine
+      }, timeToMine); // Simulate 1 second delay for each mine
     }
 
     mineIteration(0);

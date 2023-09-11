@@ -1,6 +1,7 @@
 const readline = require("readline");
 const http = require("http");
 const { SingleBar, Presets } = require("cli-progress");
+const { timeToMine } = require("./globals");
 
 // Define the server endpoint
 const SERVER_ENDPOINT = "http://localhost:3000";
@@ -34,7 +35,7 @@ function mine(times) {
           mineIteration(index + 1);
         });
       });
-    }, 1000); // 1000 milliseconds = 1 second
+    }, timeToMine); // 1000 milliseconds = 1 second
   }
 
   mineIteration(0);
